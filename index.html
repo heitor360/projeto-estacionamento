@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+
+    <!-- CSS Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <title>Estacionamento</title>
+  </head>
+  <body>
+    <div class="container">
+      <label for="nome">Nome</label>
+      <input type="text" placeholder="Digite o nome do veículo" id="nome" />
+      <label for="placa">Placa</label>
+      <input type="text" placeholder="Digite a placa do veículo" id="placa" />
+      <button id="cadastrar">Cadastrar</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Placa</th>
+            <th>Entrada</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="patio"></tbody>
+      </table>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
